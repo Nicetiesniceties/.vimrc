@@ -9,7 +9,6 @@ set backspace=2     " more powerful backspacing
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
-
 syntax on
 "set list lcs=tab:\¦\ 
 set list lcs=tab:\┋\ 
@@ -36,7 +35,7 @@ set mouse=a
 set t_Co=256
 syntax enable
 let g:solarized_termtrans = 1                                                   
-set background=dark
+"set background=dark
 colorscheme gruvbox
 "hi CursorLineNr ctermfg=240 ctermbg=187"sollight
 "hi Normal ctermbg=none
@@ -48,3 +47,63 @@ colorscheme gruvbox
 exe 'runtime autoload/' . expand('<SyntaxAttr>') . '.vim'
 hi Error ctermbg=none
 hi cErrInParen ctermbg=none
+"for vim wiki
+"set nocompatible
+"filetype plugin on
+"execute pathogen#infect() 
+" my own note.vim settings
+au BufNewFile,BufRead *.note set filetype=note
+" marker folding 
+set foldmethod=marker 
+nnoremap <space> za
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
