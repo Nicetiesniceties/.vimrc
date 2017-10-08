@@ -6,7 +6,9 @@ au BufNewFile,BufRead *.note set filetype=note
 if exists("b:current_syntax")
 	finish
 endif
-echom ""
+"echom "Do not go gentle into that good night...; Rage, rage against the dying of the light."
+"echom "¨Nothing makes a man so adventurous as an empty pocket.¨― Victor Hugo, The Hunchback of Notre Dame"
+echom "¨Whelcome back, Njceties!¨–– Note Vim"
 let b:current_syntax = "note"
 
 " define some special words
@@ -19,10 +21,10 @@ syn keyword noteDays Friday Saturday Sunday
 syn match noteNumber '\d\+'
 syn match noteNumber '[-+]\d\+'
 syn match noteNumber '[-+]\d\+\.\d*'
-syn keyword undoneStatus TODO 
-syn keyword doneStatus DONE SCORE
-syn keyword noteWarnings NOTICE FAIL 
-syn keyword noteType TIME NAME DATE URL EMAIL PHONE
+syn keyword undoneStatus FAIL NOTICE TODO UNDONE
+syn keyword doneStatus DONE SCORE SKIP
+syn keyword noteWarnings DEADLINE EXAM MIDTERM FINAL
+syn keyword noteType TIME NAME DATE URL EMAIL PHONE REASON
 syn keyword noteType WHO WHERE WHAT HOW WHEN WHICH
 syn match noteOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
 syn match noteOperator	"<<\|>>\|&&\|||\|++\|--\|->"
@@ -36,10 +38,11 @@ syn match noteOperator	"[}{]"
 hi def link undoneStatus Statement "red
 hi def link noteWarnings Error 
 hi def link doneStatus String "green
-hi def link noteNumber Number "puple
-hi def link noteOperator Typedef "yellow
+hi def link noteNumber Typedef "puple
+hi def link noteOperator Number "yellow
 hi def link noteType Preproc "less blue 
 hi def link noteMonths Identifier "blue
+hi def link noteDays Identifier "blue
 hi def link noteNode Delimiter "orange
 " -------------------------------------------------------------------
 
@@ -58,3 +61,11 @@ highlight link noteComment Comment
 hi def link noteHighlight1 Tag
 hi def link noteHighlight2 Identifier
 hi noteUnderline cterm=underline
+
+" personal settings
+" -------------------------------------------------------------------
+syn keyword Courses ADA 自動機 前瞻科技導論 LinearAlgebra SystemPrograming 
+syn keyword Courses AmazingUniverse FinancialAccounting 
+syn keyword ActivityType GIS Basketball Tutoring Personal SaxophoneQuartet
+hi Courses cterm=underline
+hi ActivityType cterm=underline
