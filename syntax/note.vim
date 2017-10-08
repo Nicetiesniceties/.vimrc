@@ -12,7 +12,10 @@ let b:current_syntax = "note"
 " define some special words
 " -------------------------------------------------------------------
 syn match noteNode "•" 
-syn keyword noteMonths Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+syn keyword noteMonths January February March April May June 
+syn keyword noteMonths July August September October November December
+syn keyword noteDays Monday Tuesday Wednesday Thursday 
+syn keyword noteDays Friday Saturday Sunday 
 syn match noteNumber '\d\+'
 syn match noteNumber '[-+]\d\+'
 syn match noteNumber '[-+]\d\+\.\d*'
