@@ -12,7 +12,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 syntax on
 "set list lcs=tab:\¦\ 
 set list lcs=tab:\┋\ 
-"set cursorcolumn
+set cursorcolumn
 set autoindent
 set ai           
 set shiftwidth=4 
@@ -56,54 +56,3 @@ au BufNewFile,BufRead *.note set filetype=note
 " marker folding 
 set foldmethod=marker 
 nnoremap <space> za
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
