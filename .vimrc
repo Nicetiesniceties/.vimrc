@@ -1,6 +1,8 @@
 "configuration for macvim and gvim
+let python_highlight_all = 1
 set guifont=Meslo\ LG\ L\ DZ\ Italic\ for\ Powerline:h18
-set fu
+"set guifont=Consolas\ Italic:h22
+"set fu
 highlight Cursor gui=inverse
 set guicursor=n-v-c:block-Cursor
 "set guicursor+=i:ver100-iCursor
@@ -25,6 +27,7 @@ set autoindent
 set ai           
 set shiftwidth=4 
 set tabstop=4
+set noexpandtab
 "set t_Co=256 
 set ruler        
 set backspace=2  
@@ -45,7 +48,8 @@ syntax enable
 let g:solarized_termtrans = 1                                                   
 set background=dark
 let g:despacio_Sunset = 1
-colorscheme spring-night 
+colorscheme gruvbox
+"colorscheme spring-night
 "hi CursorLineNr ctermfg=240 ctermbg=187"sollight
 "hi Normal ctermbg=none
 "hi CursorLine ctermfg=NONE ctermbg=243"birdy
@@ -67,3 +71,5 @@ set foldmethod=marker
 "set foldmarker=#––,––#
 nnoremap <space> za
 "hi Folded ctermfg=NONE
+"(>^.^<)
+hi Error gui=NONE
