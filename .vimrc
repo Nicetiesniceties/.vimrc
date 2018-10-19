@@ -73,3 +73,11 @@ nnoremap <space> za
 "hi Folded ctermfg=NONE
 "(>^.^<)
 hi Error gui=NONE
+au BufNewFile,BufRead *.py
+    \ set tabstop=4|
+    \ set softtabstop=4|
+    \ set shiftwidth=4|
+    \ set noexpandtab|
+    \ set autoindent|
+    \ set fileformat=unix|
+"    \ set textwidth=79|
